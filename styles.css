@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 header,
 footer {
   background-color: #1f2937;
@@ -11,15 +14,14 @@ footer {
 
 header {
   width: 100%;
-  height: 50px;
+  padding-top: 0 !important;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 nav {
-  width: 50%;
-  max-width: 500px;
-  height: 50px;
+  height: 5rem;
 }
 nav > ul {
   display: flex;
@@ -30,51 +32,50 @@ nav > ul {
   margin-block: 0;
   height: 100%;
   width: 100%;
+  max-width: 500px;
 }
 nav > ul > li {
   color: #efe7eb;
-  margin: 0 0.2rem;
+  margin: 0 1.75rem;
   padding: 0.2rem;
   display: block;
   font-size: 18px;
 }
 
 footer {
-  height: 60px;
-  padding: 20px 50px 20px 50px;
+  padding: 2rem 5rem 2rem 5rem;
   text-align: center;
 }
 
-header h3 {
-  padding-left: 215px;
-  font-size: 24px;
+header {
+  padding: 5rem;
+  font-size: 2.4rem;
   color: #f9faf8;
 }
 .first-section {
   background-color: #1f2937;
   width: 100%;
-  height: 275px;
-  max-height: 700px;
+  max-height: 70rem;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  padding: 50px;
+  padding: 5rem;
 }
 
-.introduction {
-  padding: 0 10px 20px 10px;
-  width: 300px;
-}
+/* .introduction {
+  padding: 0 1rem 2rem 1rem;
+} */
 .introduction h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: extra-bold;
   color: #f9faf8;
   padding: 0;
   margin: 0;
+  min-width: 200px;
 }
 .introduction p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #e5e7eb;
 }
 
@@ -82,14 +83,14 @@ button {
   background-color: #3882f6;
   border: none;
   border-radius: 0.4em;
-  padding: 5px 20px;
+  padding: 0.5rem 2rem;
   color: #e5e7eb;
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 .intro-image {
-  height: 172px;
-  width: 402px;
+  height: 17.2rem;
+  width: 60%;
   position: relative;
   text-align: center;
   color: white;
@@ -97,32 +98,36 @@ button {
 
 .first-section img {
   border: 1px dotted;
-  height: 172px;
-  width: 402px;
+  height: 17.2rem;
+  width: 40.2rem;
   background-color: grey;
 }
 
 .third-section {
   width: 100%;
-  height: 250px;
+
   text-align: center;
   background-color: #e5e7eb;
+  padding: 5rem;
 }
 
-.third-section p {
-  font-size: 36px;
+.quote {
+  font-size: 3.2rem;
   font-weight: lighter;
   color: #1f2937;
-  padding: 10px 170px 10px 170px;
+  max-width: 60rem;
+  margin: auto;
 }
 
 .by-whom {
   text-align: right;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 3rem;
 }
 
 .last-section {
-  height: 200px;
-  padding: 50px 100px 40px 100px;
+  padding: 5rem 10vw 4rem 10vw;
 }
 
 .call-to-action {
@@ -130,31 +135,39 @@ button {
   display: flex;
   border-radius: 0.3em;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 3rem 10rem;
 }
 
 .call-to-action button {
-  border: 2px solid white;
+  border: 0.2rem solid white;
   border-radius: 0.5em;
-  width: 120px;
-  height: 40px;
-  padding: 5px 20px;
+  width: 12rem;
+  height: 4rem;
+  padding: 0.5rem 2rem;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.5rem;
+}
+.call-to-action h3 {
+  font-size: 2.2rem;
+  color: #f9faf8;
+}
+
+.call-to-action p {
+  font-size: 1.5rem;
+  color: #f9faf8;
 }
 
 .info-head {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
 }
 .information {
   width: 100%;
-  height: 275px;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 30px;
+  margin: 5rem 0;
 }
 
 .info-card {
@@ -162,19 +175,20 @@ button {
 }
 
 .information img {
-  border: 2px solid #3883f6;
-  border-radius: 0.4em;
-  width: 120px;
-  height: 120px;
+  border: 0.2rem solid #3883f6;
+  border-radius: 1rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .information p {
-  max-width: 140px;
+  max-width: 14rem;
   word-wrap: break-word;
+  font-weight: 500;
 }
 
 .second-section {
-  padding-top: 40px;
+  padding-top: 4rem;
 }
 
 .centered {
@@ -182,5 +196,65 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
+  width: 25rem;
+}
+
+@media (max-width: 768px) and (min-width: 300px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.7rem;
+    font-size: 1.5rem;
+    color: #f9faf8;
+  }
+
+  .first-section {
+    flex-direction: column;
+  }
+  .introduction,
+  .intro-image {
+    width: 100%;
+  }
+
+  .first-section {
+    padding: 1.7rem;
+  }
+
+  .first-section img {
+    width: 90vw !important;
+  }
+
+  .intro-image {
+    width: 60%;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+  }
+  .information {
+    flex-wrap: wrap;
+  }
+
+  .call-to-action {
+    max-width: 90rem;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  .info-head {
+    font-size: 4rem;
+  }
 }
